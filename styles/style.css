@@ -30,11 +30,11 @@ body {
 
 .zone1 {
   background-color: #cbeffa;
-  height: 100vh;
+  height: 100%;
   z-index: -1;
   margin: 0;
   position: absolute;
-  width: auto;
+  width: 100%;
   padding: 0;
   top: 0;
   left: 0;
