@@ -38,14 +38,14 @@ body {
   width: 100%; /* Ensures it spans the whole width */
   text-align: center; /* Centers text if needed */
   padding: 50px;
-  margin-top: 900px;
+  margin-top: 50vw;
   gap: 130px;
 }
 
 @media screen and (max-width: 768px) {  /* Tablets & smaller screens */
   .image-container {
       flex-direction: column;
-      margin-top: 80vh;
+      margin-top: 50vh;
       align-items: center;
       justify-content: center;
   }
@@ -109,6 +109,13 @@ body {
   align-items: center;
 }
 
+p {
+  font-family: bufalino, sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 20px;
+  text-align: left;
+}
 
 
 
