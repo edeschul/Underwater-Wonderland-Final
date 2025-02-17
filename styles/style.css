@@ -3,8 +3,117 @@ body {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    background: linear-gradient(to bottom, #80B7D7, #004466);
+    background: linear-gradient(to bottom, #80B7D7, #004466); 
+    min-height: 200vh;
 }
+
+.content {
+  position: relative; /* Or absolute if necessary */
+  left: 20%;
+  transform: translateX(-50%);
+  text-align: left; /* Ensures inline elements inside are centered */
+  width: max-content; /* Adjusts to the content width, or use a fixed width */
+}
+
+@media (max-width: 768px) { /* For tablets and smaller screens */
+  .content {
+      width: 95%;
+      padding: 1vw; /* Reduce padding for smaller screens */
+      padding-right: 50%;
+  }
+}
+
+@media (max-width: 480px) { /* For mobile screens */
+  .content {
+      width: 98%;
+      padding: 10vw; /* Even skinnier margins */
+  }
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  flex-wrap: wrap; /* Allows images to wrap on small screens */
+  width: 100%; /* Ensures it spans the whole width */
+  text-align: center; /* Centers text if needed */
+  padding: 50px;
+  margin-top: 900px;
+  gap: 130px;
+}
+
+@media screen and (max-width: 768px) {  /* Tablets & smaller screens */
+  .image-container {
+      flex-direction: column;
+      margin-top: 80vh;
+      align-items: center;
+      justify-content: center;
+  }
+}
+
+
+
+.image-container img {
+  max-width: min(100%, 400px); /* Ensures the image resizes */
+  height: auto; /* Keeps the aspect ratio */
+  object-fit: contain; /* Prevents distortion */
+  width: clamp(30px, 50%, 80px);
+  margin-top: clamp(30px, 5vh, 50px);
+}
+
+
+  .image-container img {
+      width: 80%; /* Makes images take up more space on mobile */
+  }
+
+
+
+
+
+.tooltip {
+  visibility: hidden;
+  width: 250px; /* Fixed width */
+  background-color: rgba(0, 0, 0, 0.8); /* Black background */
+  color: white;
+  text-align: center;
+  align-items: center;
+  padding: 10px; /* Ensures space inside */
+  border-radius: 5px;
+  position: absolute;
+  top: 70%; /* Places tooltip below image */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  display: block; /* Ensures background fully wraps content */
+  white-space: normal; /* Allows text to wrap */
+  word-wrap: break-word; /* Ensures long words don't overflow */
+  min-height: 50px; /* Ensures it doesn’t collapse */
+  box-sizing: border-box; /* Includes padding inside width */
+}
+
+.tooltip a {
+    color: #FFD700; /* Gold link color */
+    text-decoration: underline;
+}
+
+.tooltip-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+}
+
+
+
+
+
+
 
 .fishies {
   max-width: 200px;
@@ -30,11 +139,23 @@ body {
 
 .zone1 {
   background-color: #cbeffa;
-  height: 100%;
+  height: 100vh;
   z-index: -1;
   margin: 0;
   position: absolute;
-  width: 100%;
+  width: 100vw;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+
+.zone2 {
+  background-color: #6086c0;
+  height: 100vh;
+  z-index: 0;
+  margin: 0;
+  position: absolute;
+  width: 100vw;
   padding: 0;
   top: 0;
   left: 0;
@@ -76,8 +197,11 @@ body {
   left: 0;
 }
 
+
+
+
 .bubbles{
-  position:absolute;
+  position: fixed;
   width:100%;
   height: 100%;
   z-index:0;
@@ -224,6 +348,10 @@ body {
     }
 }
 
+
+
+
+
 .wave-text span {
   display: inline-block;
   font-size: 4rem;
@@ -319,15 +447,38 @@ body {
     text-align: center;
   }
   
-  .waves {
+ .wave-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background: linear-gradient(180deg, #80B7D7 0%, #4F829F 100%);
+    z-index: -2;
+} 
+
+ .waves {
     position: fixed !important;
-    top: 7vmax !important;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: auto;
     margin-bottom: 2vmax; /*Fix for safari gap*/
     min-height:100px;
     max-height:250px;
-  }
+  }  
+
+
+
+
+
+
+
+
+
+
+
+
 
   .parallax > use {
     animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
@@ -379,34 +530,8 @@ body {
 
 
 
-.tooltip {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  font-family: 'bufalino', sans-serif;
-  font-weight: 500;
-  line-height: 40px;
-  padding: 10px 12px;
-  border-radius: 8px;
-  font-size: 35px;
-  width: 220px;
-  word-wrap: break-word;
-  white-space: normal;
-  text-align: left;
-  bottom: 5%; /* Positions tooltip above the image */
-  left: 10%;
-  transform: translateX(-50%);
-  display: none; /* Initially hidden */
-}
 
-.tooltip a {
-  color: #FFD700; /* Gold color */
-  text-decoration: underline;
-}
 
-.tooltip-container:hover .tooltip .tooltip:hover {
-  display: block;
-}
 
 
 

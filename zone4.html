@@ -10,8 +10,10 @@
 <body>
     <div class="zone4"></div>
 
-    <div style="width: 1440px; height: 100vh; position: relative; z-index: 1;">
-        <div style="width: 100vw; height: 100vh; z-index: -2; left: 0px; top: 300px; position: fixed; background: linear-gradient(180deg, #17445F 0%, #082B3F 100%)">
+
+
+    <div style="width: 100vw; height: auto; position: absolute; z-index: 10; pointer-events: auto;">
+        <div style="width: 100vw; height: 100vh; z-index: -2; left: 0px; top: 0; position: fixed; background: linear-gradient(180deg, #17445F 0%, #082B3F 100%)">
             <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"
             style="width: 100vw; height: auto; position: relative; top: 0; left: 0; transform: scaleY(1);">
@@ -19,13 +21,13 @@
             <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
             </defs>
             <g class="parallax">
-            <use xlink:href="#gentle-wave" x="48" y="0" fill="#276083" />
-            <use xlink:href="#gentle-wave" x="48" y="3" fill="#1f5374" />
-            <use xlink:href="#gentle-wave" x="48" y="5" fill="#1c4d6c" />
-            <use xlink:href="#gentle-wave" x="48" y="7" fill="#17445F" />
-            </g>
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="#276083" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="#1f5374" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="#1c4d6c" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#17445F" />
+                </g>
             </svg>
-        </div>
+        </div>  
   
 
        
@@ -46,84 +48,46 @@
             </div>
         </div>
 
+<div class="content">
+        <div style="max-width: 90%; width: 363px; height: 134px; padding: 5vw; left: 538px; margin-top: 10vh; top: 25vh; position: relative; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+            <div style="text-align: center"><span style="color: #C2C2C2; font-size: min(5vw, 50px); font-family: anisette-std, sans-serif; font-style: normal; font-weight: 600; word-wrap: break-word">Abyssopelagic Zone<br/></span><span style="color: #C2C2C2; font-size: min(3vw, 30px); font-family: bufalino, sans-serif; font-weight: 500; word-wrap: break-word">Zone 4</span></div>
 
-        <div style="width: 363px; height: 134px; padding: 10px; left: 538px; top: 16vh; position: absolute; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-            <div style="text-align: center"><span style="color: #C2C2C2; font-size: 50px; font-family: anisette-std, sans-serif; font-style: normal; font-weight: 600; word-wrap: break-word">Abyssopelagic Zone<br/></span><span style="color: #C2C2C2; font-size: 40px; font-family: bufalino, sans-serif; font-weight: 500; word-wrap: break-word">Zone 4</span></div>
-            <div style="width: 994px; left: auto; top: 15vh; position: absolute; color: #C2C2C2; font-size: 50px; font-family: bufalino, sans-serif; font-weight: 500; line-height: 50px;  word-wrap: break-word">This realm is defined by perpetual darkness, near-freezing temperatures, and crushing pressure, creating one of the most extreme environments on Earth. Despite these harsh conditions, life persists, with organisms like deep-sea cucumbers, giant amphipods, and abyssal octopuses adapting to the scarcity of food and the absence of sunlight. Many creatures in this zone have slow metabolisms, soft bodies to withstand pressure, and enhanced sensory adaptations to detect movement in the darkness. The abyss zone is also home to hydrothermal vents, where heat and minerals from Earth's interior support unique ecosystems fueled by chemosynthetic bacteria. Though largely unexplored, this deep-sea frontier plays a crucial role in Earth’s carbon cycle and the stability of ocean ecosystems. </div>
+            <div style="width: 994px; left: auto; top: 30vmax; position: absolute; color: #C2C2C2; margin-bottom: clamp(5px, 2vh, 10px); font-size: clamp(24px, 3vw, 70px); font-family: bufalino, sans-serif; font-weight: 500; line-height: clamp(1.2, 1.5vw, 1.4);  word-wrap: break-word">This realm is defined by perpetual darkness, near-freezing temperatures, and crushing pressure, creating one of the most extreme environments on Earth. Despite these harsh conditions, life persists, with organisms like deep-sea cucumbers, giant amphipods, and abyssal octopuses adapting to the scarcity of food and the absence of sunlight. Many creatures in this zone have slow metabolisms, soft bodies to withstand pressure, and enhanced sensory adaptations to detect movement in the darkness. The abyss zone is also home to hydrothermal vents, where heat and minerals from Earth's interior support unique ecosystems fueled by chemosynthetic bacteria. Though largely unexplored, this deep-sea frontier plays a crucial role in Earth’s carbon cycle and the stability of ocean ecosystems.</div>
         </div>
+
         <div style="width: 148px; height: 71px; padding: 10px; left: 646px; top: 110vh; position: absolute; justify-content: center; align-items: center; display: inline-flex">
-            <div style="text-align: center; color: #C2C2C2; font-size: 40px; font-family: bufalino, sans-serif; font-weight: 500; word-wrap: break-word">6,000 Meters</div>
+            <div style="text-align: center; color: #C2C2C2; font-size: 40px; top: 150vh; position: relative; font-family: bufalino, sans-serif; font-weight: 500; word-wrap: break-word">6,000 Meters</div>
         </div>
+</div>
 
 
-
-
-
-
- <div class="tooltip-container"
-        onmouseover="showTooltip('tooltip')"
-        onmouseout="hideTooltip('tooltip')">
-        <div style="width: 900px; height: auto; padding: 2vmax; margin-left: 60px; left: 700px; top: 868px; position: absolute; justify-content: flex-start; align-items: center; display: inline-flex">
-            <img style="width: auto; height: 25rem; top: 100vmax; right: 80vmax" src="images/anglerfish.png" alt="anglerfish">
-            <div id="tooltip" class="tooltip">
-                Anglerfish use a bioluminescent lure to attract prey in the deep sea! This glowing lure helps them survive in the dark depths of the ocean, where food is scarce. Click <a href="https://www.montereybayaquarium.org/animals/animals-a-to-z/deep-sea-anglerfish" target="_blank">here</a> for more info!
+    <div class="image-container">
+        <div class="tooltip-container" onmouseover="showTooltip('tooltip-turtle')" onmouseout="hideTooltip('tooltip-turtle')">
+            <img src="images/anglerfish.png" alt="anglerfish">
+            <div id="tooltip-turtle" class="tooltip">
+                <p>Anglerfish use a bioluminescent lure to attract prey in the deep sea! This glowing lure helps them survive in the dark depths of the ocean, where food is scarce. Click 
+                    <a href="https://www.montereybayaquarium.org/animals/animals-a-to-z/deep-sea-anglerfish" target="_blank">here</a> for more info!
+                </p>
             </div>
-        </div>
         </div>
     
-
-
-<div class="tooltip-container"
-    onmouseover="showTooltip('tooltip-dolphin')"
-    onmouseout="hideTooltip('tooltip-dolphin')"> 
-        <div style="width: 686px; height: 686px; padding: 2vmax; left: 0vmax; top: 990px; position: absolute; justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
-            <img style="width: auto; height: 30rem; left: 5vmax; top: 10vmax" src="images/flashlight fish.png" alt="flashlight fish">
+        <div class="tooltip-container" onmouseover="showTooltip('tooltip-dolphin')" onmouseout="hideTooltip('tooltip-dolphin')">
+            <img src="images/flashlight fish.png" alt="flashlight fish">
             <div id="tooltip-dolphin" class="tooltip">
-                Flashlight fish have glowing patches under their eyes that help them navigate the dark ocean! These light-producing organs, called photophores, contain bioluminescent bacteria. Flashlight fish can "blink" their lights on and off by covering the photophores with a special flap of skin, helping them communicate, attract prey, or evade predators in the deep sea! Click <a href="https://www.aquariumofpacific.org/onlinelearningcenter/species/splitfin_flashlight_fish#:~:text=Flashlight%20fish%20live%20in%20the,detect%20prey%20in%20the%20dark." target="_blank">here</a> for more info!
+                <p>Flashlight fish have glowing patches under their eyes that help them navigate the dark ocean! These light-producing organs, called photophores, contain bioluminescent bacteria. Flashlight fish can "blink" their lights on and off by covering the photophores with a special flap of skin, helping them communicate, attract prey, or evade predators in the deep sea! Click 
+                    <a href="https://www.aquariumofpacific.org/onlinelearningcenter/species/splitfin_flashlight_fish#:~:text=Flashlight%20fish%20live%20in%20the,detect%20prey%20in%20the%20dark." target="_blank">here</a> for more info!
+                </p>
             </div>
-        </div> 
         </div>
+    </div>
+   
     
 
         <a href="zone5.html"> 
             <img src="images/sea star.png"
-            style="position: fixed; bottom: 20px; right: 20px; height: auto;  width: 100px; z-index: 1000">
+            style="position: fixed; bottom: 20px; right: 20px; height: auto;  width: 50px; z-index: 1000">
         </a>
 
 <script src="animals.js"></script>
-
-
-
-    <!-- <div style="width: 100%; height: 100%; position: relative; background: white">
-        <div style="width: 1440px; height: 1561px; left: 0px; top: 172px; position: absolute; background: linear-gradient(180deg, #17445F 0%, #082B3F 100%)"></div>
-        <div style="width: 1205px; height: 78px; left: 113px; top: 54px; position: absolute; background: white; justify-content: space-between; align-items: center; display: inline-flex">
-            <div style="padding: 10px; justify-content: center; align-items: center; gap: 10px; display: flex">
-                <div style="color: black; font-size: 48px; font-family: Kotta One; font-weight: 400; word-wrap: break-word">Underwater Wonderland</div>
-            </div>
-        <a href="index.html" style="text-decoration: none;">
-            <div style="justify-content: flex-start; align-items: center; gap: 50px; display: flex">
-                <div style="width: 92px; height: 33px; padding: 15px; background: white; border-radius: 5px; border: 2px black solid; justify-content: space-between; align-items: center; display: flex">
-                    <div style="color: black; font-size: 35px; font-family: Jaldi; font-weight: 400; word-wrap: break-word">Home</div>
-        </a>    
-                </div>
-                <div style="width: 120px; height: 31px; padding: 15px; background: white; border-radius: 5px; border: 2px black solid; justify-content: center; align-items: center; gap: 10px; display: flex">
-                    <div style="color: black; font-size: 35px; font-family: Jaldi; font-weight: 400; word-wrap: break-word">Contact</div>
-                </div>
-            </div>
-        </div>
-        <div style="padding: 10px; left: 495px; top: 224px; position: absolute; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-            <div style="text-align: center"><span style="color: #C2C2C2; font-size: 50px; font-family: Kotta One; font-weight: 400; word-wrap: break-word">Abyssopelagic Zone<br/></span><span style="color: #C2C2C2; font-size: 30px; font-family: Jaldi; font-weight: 400; word-wrap: break-word">Zone 4</span></div>
-        </div>
-        <div style="width: 1014px; height: 420px; padding: 10px; left: 213px; top: 362px; position: absolute; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-            <div style="width: 994px; text-align: center; color: #C2C2C2; font-size: 30px; font-family: Jaldi; font-weight: 400; line-height: 40px; word-wrap: break-word">This realm is defined by perpetual darkness, near-freezing temperatures, and crushing pressure, creating one of the most extreme environments on Earth. Despite these harsh conditions, life persists, with organisms like deep-sea cucumbers, giant amphipods, and abyssal octopuses adapting to the scarcity of food and the absence of sunlight. Many creatures in this zone have slow metabolisms, soft bodies to withstand pressure, and enhanced sensory adaptations to detect movement in the darkness. The abyss zone is also home to hydrothermal vents, where heat and minerals from Earth's interior support unique ecosystems fueled by chemosynthetic bacteria. Though largely unexplored, this deep-sea frontier plays a crucial role in Earth’s carbon cycle and the stability of ocean ecosystems.</div>
-        </div>
-        <div style="width: 181px; height: 38px; left: 629px; top: 1602px; position: absolute; text-align: center; color: #C2C2C2; font-size: 30px; font-family: Jaldi; font-weight: 400; word-wrap: break-word">6,000 Meters</div>
-        <div style="height: 476.18px; padding: 10px; left: 53px; top: 1160px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
-            <img style="align-self: stretch; height: 456.18px" src="images/anglerfish.png" alt="angler fish" />
-        </div>
-        <div style="padding: 10px; left: 694px; top: 754px; position: absolute; justify-content: flex-start; align-items: center; gap: 10px; display: inline-flex">
-            <img style="width: 546px; height: 546px; transform: rotate(0); transform-origin: 0 0" src="images/flashlight fish.png" alt="flashlight fish" />
-        </div>
-    </div> -->
 </body>
 </html>

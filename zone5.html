@@ -10,7 +10,77 @@
 <body>
     <div class="zone5"></div>
 
-    <div style="width: 1440px; height: 100vh; position: relative; z-index: 1;">
+
+
+    <div style="width: 100vw; height: auto; position: absolute; z-index: 10; pointer-events: auto;">
+        <div style="width: 100vw; height: 100vh; z-index: -2; left: 0px; top: 0; position: fixed; background: linear-gradient(180deg, #092D42 0%, #021825 100%)">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"
+            style="width: 100vw; height: auto; position: relative; top: 0; left: 0; transform: scaleY(1);">
+            <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="#154f71" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="#114664" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="#0c3750" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#092D42" />
+                </g>
+            </svg>
+        </div>  
+  
+
+       
+    <div class="wave-container">
+        <div style="padding: 5px; left: 113px; top: 54px; position: absolute; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+        <h1 class="wave-text">    
+            <span>U</span><span>n</span><span>d</span><span>e</span><span>r</span><span>w</span><span>a</span><span>t</span><span>e</span><span>r</span>   <span>W</span><span>o</span><span>n</span><span>d</span><span>e</span><span>r</span><span>l</span><span>a</span><span>n</span><span>d</span></h1>
+        </div>
+
+    <a href="index.html" 
+        style="text-decoration: none"
+        onmouseover="this.querySelector('span').style.color='violet'" 
+        onmouseout="this.querySelector('span').style.color='black'">
+        <div style="left: 1225px; top: 76.50px; position: absolute; justify-content: flex-start; align-items: center; gap: 50px; display: inline-flex">
+            <div style="width: 92px; height: 33px; padding: 15px; background: white; border-radius: 5px; border: 2px black solid; justify-content: space-between; align-items: center; display: flex">
+                <div style="color: black; font-size: 50px; font-family: bufalino, sans-serif; font-weight: 500; word-wrap: break-word">Home</div>
+        </a>
+            </div>
+        </div>
+
+<div class="content">
+        <div style="max-width: 90%; width: 363px; height: 134px; padding: 5vw; left: 538px; margin-top: 10vh; top: 25vh; position: relative; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+            <div style="text-align: center"><span style="color: white; font-size: min(5vw, 50px); font-family: anisette-std, sans-serif; font-style: normal; font-weight: 600; word-wrap: break-word">Hadalpelagic Zone<br/></span><span style="color: white; font-size: min(3vw, 30px); font-family: bufalino, sans-serif; font-weight: 500; word-wrap: break-word">Zone 5</span></div>
+
+            <div style="width: 994px; left: auto; top: 30vmax; position: absolute; color: white; margin-bottom: clamp(5px, 2vh, 10px); font-size: clamp(24px, 3vw, 70px); font-family: bufalino, sans-serif; font-weight: 500; line-height: clamp(1.2, 1.5vw, 1.4);  word-wrap: break-word">This is the most extreme environment on Earth, characterized by total darkness, near-freezing temperatures, and immense pressures over 1,000 times greater than at the surface. Despite these harsh conditions, life persists with specialized creatures such as amphipods, deep-sea jellyfish, and the elusive snailfish, which have adapted to withstand crushing pressure and survive on marine snow and organic matter drifting down from above. Some areas near subduction zones feature hydrothermal vents and cold seeps, where unique life forms thrive on chemical energy rather than sunlight. The trench zone remains one of the least explored and most mysterious places on Earth, offering insights into the limits of life and the deep-sea ecosystem.</div>
+        </div>
+
+        <div style="width: 148px; height: 71px; padding: 10px; left: 646px; top: 110vh; position: absolute; justify-content: center; align-items: center; display: inline-flex">
+            <div style="text-align: center; color: white; font-size: 40px; top: 150vh; position: relative; font-family: bufalino, sans-serif; font-weight: 500; word-wrap: break-word">~11,000 Meters</div>
+        </div>
+</div>
+
+
+    <div class="image-container">
+        <div class="tooltip-container" onmouseover="showTooltip('tooltip-turtle')" onmouseout="hideTooltip('tooltip-turtle')">
+            <img src="images/snailfish.png" alt="snailfish">
+            <div id="tooltip-turtle" class="tooltip">
+                <p>Snailfish are some of the deepest-living fish on Earth! Scientists have discovered snailfish thriving at depths of over 8,000 meters (26,000 feet) in the Mariana Trench, where the pressure is more than 1,000 times that of sea level. Click 
+                    <a href="https://www.britannica.com/animal/snailfish" target="_blank">here</a> for more info!
+                </p>
+            </div>
+        </div>
+    
+        <div class="tooltip-container" onmouseover="showTooltip('tooltip-dolphin')" onmouseout="hideTooltip('tooltip-dolphin')">
+            <img src="images/pearlfish.png" alt="pearlfish">
+            <div id="tooltip-dolphin" class="tooltip">
+                <p> Pearlfish have a bizarre survival strategy—they often live inside the bodies of sea cucumbers! Some species of pearlfish enter a sea cucumber’s anus to hide from predators, using it as a safe shelter. Click 
+                    <a href="https://www.britannica.com/animal/pearlfish" target="_blank">here</a> for more info!
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- <div style="width: 1440px; height: 100vh; position: relative; z-index: 1;">
         <div style="width: 100vw; height: 100vh; z-index: -2; left: 0px; top: 300px; position: fixed; background: linear-gradient(180deg, #092D42 0%, #021825 100%)">
             <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"
@@ -83,7 +153,7 @@
             </div>
         </div> 
         </div>
-    
+     -->
 
 <script src="animals.js"></script>
 
